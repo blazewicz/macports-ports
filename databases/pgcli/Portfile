@@ -21,14 +21,11 @@ checksums           rmd160  b21661497897b26408db6d5b452cdacbf2449c34 \
                     sha256  349db982139d6dd7c05989d66313e98d2184724464679b12fdb61ef96be13fc6 \
                     size    437034
 
-variant python27 conflicts python36 python37 python38 description "Use Python 2.7" {}
-variant python36 conflicts python27 python37 python38 description "Use Python 3.6" {}
-variant python37 conflicts python27 python36 python38 description "Use Python 3.7" {}
-variant python38 conflicts python27 python36 python37 description "Use Python 3.8" {}
+variant python36 conflicts python37 python38 description "Use Python 3.6" {}
+variant python37 conflicts python36 python38 description "Use Python 3.7" {}
+variant python38 conflicts python36 python37 description "Use Python 3.8" {}
 
-if {[variant_isset python27]} {
-    python.default_version 27
-} elseif {[variant_isset python36]} {
+if {[variant_isset python36]} {
     python.default_version 36
 } elseif {[variant_isset python37]} {
     python.default_version 37
