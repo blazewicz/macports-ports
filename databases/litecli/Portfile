@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           python 1.0
 PortGroup           github 1.0
 
-github.setup        dbcli litecli 1.2.0 v
+github.setup        dbcli litecli 1.3.0 v
 revision            0
 
 categories          databases python
@@ -17,9 +17,9 @@ long_description    {*}${description}
 
 homepage            https://litecli.com/
 
-checksums           rmd160  aca71f38f2c794841070d70a14ab4878d7a16192 \
-                    sha256  00cb7115d6e081cb09366119534a081e777c5bda42ca58a2b38d1a9249a63d97 \
-                    size    882614
+checksums           rmd160  1d75f15f8884ae39bbeac785ae97695b2986f523 \
+                    sha256  2f9b5824b946b79b43339d2d9cc0d05d34418a8f7d1a59fcb8677cbf00727351 \
+                    size    884027
 
 patchfiles          setup.py.diff
 
